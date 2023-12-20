@@ -13,7 +13,7 @@ dotenv.config();
 
 const DB_PASSWORD = process.env.DB_PASSWORD
 const DB_NAME = process.env.DB_NAME
-URL = `mongodb+srv://santiagoacu99:${DB_PASSWORD}@cluster0.e6szesj.mongodb.net/${DB_NAME}`
+URL = `mongodb+srv://santiagoacu99:${DB_PASSWORD}@cluster0.e6szesj.mongodb.net/${DB_NAME}?retryWrites=true&w=majority`
 console.log(URL);
 
 
