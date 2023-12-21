@@ -31,7 +31,7 @@ const app = express();
 app.use(logger('dev'));
 app.use(express.json());
 app.use(cors({
-  origin: 'http://localhost:3000'
+  origin: 'https://frontdeploy-tau.vercel.app/'
 }));
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
